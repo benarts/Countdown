@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<meta name="viewport" content="width=device-width, initiale-scale=1.0">
+		<title>Compte à rebours(bêta)</title>
+		<link rel="stylesheet" href="css/CPR.css"> 
+		<link rel="stylesheet" href="css/menu.css"/> 
+    </head>
+	<header class="v-header container">
+		<div class="fullscreen-video-wrap">
+			<video src="images/2.mp4" autoplay muted loop></video>
+		</div>
+		<div class="header-overlay"></div>
+	</header>
+	<body >
+		<div class="col-12">
+			<div class="web">
+				<p class="titre">Sortie de mon future manga...</p>
+				<p class="titre2">Compte à rebours(bêta)</p>
+				<div class="button1">
+					<button id="lancer" class="btn" type="button" onclick="LancerDecompte();"><img class="icon" src="images/icon.png" /></button>
+				</div>
+				<section id="button2">
+					<div class="bouton">
+						<button id="Pause" class="btn" type="button" onclick="PauseRepriseDecompte();">Stop</button>
+						<button id="reset" class="btn" type="button" onclick="ResetDecompte();">Reset</button>
+						<button id="init" class="btn" type="button" onclick="InitialiserDecompte();">Initialise</button>
+					</div>      
+				</section>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-12">
+				<div id="bien">
+				
+					<section id="jour">
+						<div id="xjours" class="xjours">0</div><p class="titre3">Sortie du manga dans...</p><div class="jours1">Jours</div>
+					</section> 
+					
+
+					<div id="bien2" class="container2">
+					<img class="couverture" src="images/2.jpg" />
+					  <div class="overlay">
+						<div class="text">Sortie de mon future manga"LES ELUS"</div>
+					  </div>
+					</div>
+
+
+					<div id="bien3">
+						<div class="menu text-center col-sm-12">
+							<ul>
+							  <li><a href="#"><img class="icon1" src="images/bar.png" /></a>
+								<ul>
+								  <li class="forme" ><a href="#"><A HREF="../acceuil.html"><img class="home" src="images/home.png" /></A></a></li>
+								  <li class="forme2"><a href="#"><A HREF="book/book.html"><img class="arts" src="images/icon2.png" /></A>
+								</ul>
+							  </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+		
+		<div class="col-12">
+			<div class="web2">
+				<section id="decompter">
+					<div class="decompter">
+						<div id="xheures" class="xheures">0<div>Heures</div></div>
+						<div id="xminutes" class="xminutes">0<div>Minutes</div></div>
+						<div id="xsecondes" class="xsecondes">0<div>Secondes</div></div>
+					</div>
+				</section>
+				
+			<section id="saisie2">
+				<div id="saisie" class="saisie">
+					<input class="" type="number" name="nJours" id="nJours" placeholder="Jours"  min="0" max="555" onblur="Saisie('nJours');">
+					<input class="" type="number" name="nHeures" id="nHeures" placeholder="Heures" min="0" max="24" onblur="Saisie('nHeures');">
+					<input class="" type="number" name="nMinutes" id="nMinutes" placeholder="Minutes" min="0" max="60" onblur="Saisie('nMinutes');">
+					<input class="" type="number" name="nSecondes" id="nSecondes" placeholder="Secondes" min="0" max="60" onblur="Saisie('nSecondes');">
+				</div> 
+			</section>
+				<div id="fin" class="centre">appuyer sur le bouton <button id="init2" class="btn" type="button" onclick="InitialiserDecompte();">Initialise</button>pour recommencer</div>
+			</div>
+		</div>
+			
+
+
+		
+		
+		<script src="java/jquery-1.11.1.min.js"></script>
+		<script src="java/java.js"></script>
+	</body>
+</html>
